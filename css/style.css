@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+/*
+========================================================================
+ Header
+========================================================================
+*/
+.header_container{
+    background-color: pink;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.header_left img{
+    width: 100px;
+    height: 100px;
+}
+
+.header_mid{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header_right{
+    margin: 20px 0;
+}
+
+.header_right li{
+    list-style: none;
+    margin: 10px 0;
+}
+.header_right li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(196, 130, 141);
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+/*
+========================================================================
+ Profile Section
+========================================================================
+*/
+
+.profile_container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile_container img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    transition: transform 2s;
+}
+
+.profile_container img:hover{
+    transform: rotate(360deg);
+}
+
+.profile_head{
+    text-align: center;
+}
+
+.profile_mid{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile_mid h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3.5rem;
+}
+
+.profile_bottom{
+    text-align: center;
+}
+
+
+/*
+========================================================================
+ About me Section
+========================================================================
+*/
+
+.about_me_container{
+    background-color: palevioletred;
+    padding: 10px;
+}
+.about_me_head{
+    text-align: center;
+}
+
+
+.about_me_mid_left{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.about_me_mid_left img{
+    width: 100px;
+    height: 100px;
+    border-radius: 55px;
+}
+.about_me_mid_right{
+    text-align: center;
+}
+
+.about_me_first_heading_para{
+    margin: 10px;
+    padding: 5px;
+}
+
+.about_me_second_describe_para{
+    margin: 5px;
+    padding: 15px;
+}
+
+.about_me_info{
+    margin: 5px;
+    padding: 10px;
+}
+
+.about_me_bottom{
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+}
+
+.about_me_bottom button{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(180, 32, 180);
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.about_me_bottom button:hover{
+    background-color: rgb(221, 138, 179);
+}
+
+
+
+/*
+========================================================================
+ Life Section
+========================================================================
+*/
+
+
+/*
+========================================================================
+ life mid card
+========================================================================
+*/
+
+
+.life_container{
+    margin: 3px;
+    padding: 5px;
+}
+
+.life_left_card{
+    background-color: rgb(158, 156, 156);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.life_left_card:hover{
+    box-shadow: 3px 3px 15px rgb(56, 52, 52);
+}
+
+.life_left_card h1{
+    background-color: rgb(94, 92, 92);
+    padding: 15px;
+}
+
+.life_left_card p{
+    padding: 15px;
+}
+
+.life_left_card img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+/*
+========================================================================
+ life mid card
+========================================================================
+*/
+
+
+.life_mid_card{
+    background-color: rgb(158, 156, 156);
+    margin: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.life_mid_card:hover{
+    box-shadow: 3px 3px 15px rgb(56, 52, 52);
+}
+
+
+.life_mid_card h1{
+    background-color: rgb(94, 92, 92);
+    padding: 15px;
+}
+
+.life_mid_card p{
+    padding: 15px;
+}
+
+.life_mid_card img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/*
+========================================================================
+ life right card
+========================================================================
+*/
+
+
+.life_right_card{
+    background-color: rgb(158, 156, 156);
+    margin: 3px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.life_right_card:hover{
+    box-shadow: 3px 3px 15px rgb(56, 52, 52);
+}
+
+
+.life_right_card li{
+    list-style: none;
+    margin: 40px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.life_right_card li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 12px;
+    border-radius: 500px;
+    background-color: whitesmoke;
+}
+
+.life_right_card li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0%;
+    height: 12px;
+    border-radius: 500px;
+
+    background-color: rgb(153, 13, 153);
+
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+
+}
+
+.life_right_card li.html::after{
+    animation-name: html;
+}
+
+.life_right_card li.css::after{
+    animation-name: css;
+}
+
+.life_right_card li.js::after{
+    animation-name: js;
+}
+
+.life_right_card li.bootstrap::after{
+    animation-name: bootstrap;
+}
+
+.life_right_card li.python::after{
+    animation-name: python;
+}
+
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes js {
+    to{
+        width: 85%;
+    }
+}
+
+@keyframes bootstrap {
+    to{
+        width: 65%;
+    }
+}
+
+@keyframes python {
+    to{
+        width: 90%;
+    }
+}
+
+/*
+========================================================================
+ achievements contact section
+========================================================================
+*/
+
+.achievements_contact_container{
+    background-color: rgb(221, 138, 179);
+    margin: 15px;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/*
+========================================================================
+ achievements content
+========================================================================
+*/
+
+.achievements{
+    text-align: center;    
+}
+
+.achievements p{
+    padding: 5px 0;
+}
+
+.achievements p:nth-child(1){
+    padding: 0;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.achievements p:nth-child(2){
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/*
+========================================================================
+ contact content
+========================================================================
+*/
+
+.contacts{
+    text-align: center;
+}
+
+.contacts p{
+    padding: 0;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contacts p:nth-child(2){
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.contacts input{
+    display: block;
+    width: 99%;
+    margin: 5px;
+    padding: 10px;
+    border: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contacts input:focus{
+    border: white;
+    background-color: burlywood;
+}
+
+#message{
+    display: block;
+    width: 99%;
+    margin: 5px;
+    padding: 10px;
+    border: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    resize: none;
+}
+
+#message:focus{
+    border: white;
+    background-color: burlywood;
+}
+
+.contacts button{
+    margin: 6px;
+    padding: 8px 10px;
+    background-color: rgb(138, 41, 230);
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contacts button:hover{
+    background-color: rgb(131, 24, 231);
+    color: black;
+}
+
+
+/*
+========================================================================
+ more contacts ==== social media buttons
+========================================================================
+*/
+
+.social_media_buttons{
+    text-align: center;
+}
+
+.social_media_buttons p{
+    padding: 0;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.social_media_buttons p:nth-child(2){
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.media_buttons{
+    list-style: none;
+}
+
+.media_buttons button{
+    color: yellow;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    width: 35px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.media_buttons button:hover{
+    color: black;
+    background-color: grey;
+}
+
+/*
+========================================================================
+ Footer Section
+========================================================================
+*/
+
+.footer_container{
+    background-color: black;
+    margin: 14px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.footer_left{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.footer_left li{
+    list-style: none;
+    margin: 10px 0;
+}
+.footer_left li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.footer_right p{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
